@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body>
+    <h2>Dealer: <span id="dealer-sum"></span></h2>
+    <div id="dealer-cards">
+      <img id="hidden" src="./cards/BACK.png" />
+    </div>
+
+    <h2>You: <span id="your-sum"></span></h2>
+    <div id="your-cards"></div>
+
+    <br />
+    <p><i data-feather="dollar-sign"></i> <span id="yourBalance">1000</span></p>
+    <label id="betLabel" for="bet" style="color: #fff; font-weight: 1000"
+      >your bet:</label
+    >
+    <input type="number" id="bet" required />
+    <br />
+    <br />
+
+    <div class="buttons">
+      <button id="hit">Hit</button>
+      <button id="stay">Stay</button>
+    </div>
+    <button id="start">Start</button>
+    <button style="display: none" id="tryAgain">Try Again!</button>
+    <p id="results"></p>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
