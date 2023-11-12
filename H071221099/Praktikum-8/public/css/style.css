@@ -1,0 +1,99 @@
+body {
+    background-color: #393646;
+}
+
+.hero__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:100%;
+    height:auto;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.hero__overlay {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.hero__content-width {
+    max-width: 540px;
+}
+
+nav {
+    z-index: 2;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn__main {
+    width: 200px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn__main span {
+    background: #fff;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn__main:hover span {
+    width: 100%;
+}
+
+.btn__main:hover {
+    border: none;
+    
+}
